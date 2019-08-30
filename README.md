@@ -1,4 +1,6 @@
-PHP-based SMPP client lib
+
+
+PSR-4 Compliant SMPP client lib
 =============
 
 This is a simplified SMPP client lib for sending or receiving smses through [SMPP v3.4](http://www.smsforum.net/SMPP_v3_4_Issue1_2.zip).
