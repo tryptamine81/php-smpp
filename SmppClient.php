@@ -1,5 +1,8 @@
 <?php
-require_once dirname(__FILE__).DIRECTORY_SEPARATOR.'sockettransport.class.php';
+
+namespace \Tryptamine81\PhpSmpp;
+
+use \Tryptamine81\PhpSmpp\SocketTransport;
 	
 /**
  * Class for receiving or sending sms through SMPP protocol.
