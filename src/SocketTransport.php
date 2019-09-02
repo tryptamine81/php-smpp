@@ -215,7 +215,7 @@ class SocketTransport
 			socket_set_option($socket4,SOL_SOCKET,SO_SNDTIMEO,$this->millisecToSolArray(self::$defaultSendTimeout));
 			socket_set_option($socket4,SOL_SOCKET,SO_RCVTIMEO,$this->millisecToSolArray(self::$defaultRecvTimeout));
 		}
-		$it = new ArrayIterator($this->hosts);
+		$it = new \ArrayIterator($this->hosts);
 		while ($it->valid()) {
 			list($hostname,$port,$ip6s,$ip4s) = $it->current();
 			if (!self::$forceIpv4 && !empty($ip6s)) { // Attempt IPv6s first
