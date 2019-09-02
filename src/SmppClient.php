@@ -1,5 +1,5 @@
 <?php
-namespace \Tryptamine81\PhpSmpp;
+namespace Tryptamine81\PhpSmpp;
 use \Tryptamine81\PhpSmpp\SocketTransport;
 	
 /**
