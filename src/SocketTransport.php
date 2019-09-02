@@ -103,7 +103,7 @@ class SocketTransport
 			$this->hosts[] = array($hostname,$port,$ip6s,$ip4s);
 		}
 		if ($this->debug) call_user_func($this->debugHandler, "Built connection pool of ".count($this->hosts)." host(s) with $i ip(s) in total");
-		if (empty($this->hosts)) throw new InvalidArgumentException('No valid hosts was found');
+		if (empty($this->hosts)) throw new \InvalidArgumentException('No valid hosts was found');
 	}
 	/**
 	 * Get a reference to the socket.
@@ -358,4 +358,4 @@ class SocketTransport
 		}
 	}
 }
-class SocketTransportException extends RuntimeException { }
+class SocketTransportException extends \RuntimeException { }
